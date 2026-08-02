@@ -1,7 +1,27 @@
 aid: talkiatry
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/talkiatry.png
 name: Talkiatry
-description: Talkiatry is a company surfaced as a portfolio company of a16z and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Talkiatry is an online psychiatry (telepsychiatry) platform that connects patients
+  with in-network, employed psychiatrists and therapists for virtual mental health care.
+  Patients begin with a free online assessment that matches them to a psychiatrist, then
+  attend video visits for evaluation, medication management, and talk therapy. Talkiatry
+  treats conditions including ADHD, depression, anxiety, bipolar disorder, PTSD, and OCD,
+  works with major insurance plans, and operates as a HIPAA-compliant, LegitScript-certified
+  telehealth provider. The company is backed by a16z. As of this enrichment pass Talkiatry
+  publishes a consumer telehealth website but no public developer API, API documentation,
+  or developer portal.
 url: https://raw.githubusercontent.com/api-evangelist/talkiatry/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +29,44 @@ x-backed-by:
 - a16z
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-has-api: false
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Healthcare
+- Mental Health
+- Telehealth
+- Telepsychiatry
+- Psychiatry
+- Behavioral Health
+- Digital Health
 apis: []
+common:
+- type: Website
+  url: https://www.talkiatry.com
+- type: Blog
+  url: https://www.talkiatry.com/blog
+- type: Support
+  url: https://www.talkiatry.com/faqs
+- type: PrivacyPolicy
+  url: https://www.talkiatry.com/privacy-policy
+- type: TermsOfService
+  url: https://www.talkiatry.com/terms-of-use
+- type: Careers
+  url: https://www.talkiatry.com/careers/jobs
+- type: Press
+  url: https://www.talkiatry.com/press
+- type: DomainSecurity
+  url: security/talkiatry-domain-security.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v1
